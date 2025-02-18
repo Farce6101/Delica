@@ -4,7 +4,7 @@ function Header(){
             <div className="header-container">
                 <div className="nav-link">
                     <a href="">Home</a>
-                    <a href="">About</a>
+                    <a href="">About Me</a>
                     <a href="">Project</a>
                     <a href="">Contact</a>
                 </div>
