@@ -4,17 +4,23 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './header.jsx'
 import Hero from './hero.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutMe from './AboutMe.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     <div className="hero-body">
+    <Router>
+      <div className="hero-body">
         <Header />
-        <Hero />
-     </div>
-    </>
-  )
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<AboutMe />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
+
 
 export default App
